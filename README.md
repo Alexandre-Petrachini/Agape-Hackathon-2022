@@ -185,12 +185,14 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 ## Contact
 
 Alexandre Petrachini - alexandrepetrachini@gmail.com
+<br>
 Lucas Varani - lucascvarani@gmail.com
+<br>
 Anna Redistuo - annaredistuo@gmail.com
+<br>
 Mariana Panham - mahpanham@gmail.com
+<br>
 Marcelo Annunciação - marceloa@gmail.com
-
-Project Link: [https://github.com/Alexandre-Petrachini/hackathon-ods-2022-econo](https://github.com/Alexandre-Petrachini/hackathon-ods-2022-econo)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -199,7 +201,7 @@ Project Link: [https://github.com/Alexandre-Petrachini/hackathon-ods-2022-econo]
 <!-- ACKNOWLEDGMENTS -->
 ## Reconhecimentos
 
-* [Ao time incrivel do hackathon, queremos levar isto para frente!]()
+* Ao time incrivel do hackathon, queremos levar isto para frente!
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
