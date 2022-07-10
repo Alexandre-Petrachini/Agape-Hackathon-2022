@@ -76,7 +76,7 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## Sobre o Projeto
 
 ![login out](https://user-images.githubusercontent.com/36488039/178151491-ad32714c-6a05-414f-81b3-345755f630f4.png)
 
