@@ -28,4 +28,9 @@ export class Workshop {
     const repositoryResponse = await this.repository.getMyWorkshops(id)
     return repositoryResponse
   }
+
+  async getWorkshop(id: string): Promise<WorkshopModel> {
+    const repositoryResponse = await this.repository.getWorkshop(id)
+    return repositoryResponse
+  }
 }

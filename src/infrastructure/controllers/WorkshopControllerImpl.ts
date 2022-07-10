@@ -54,4 +54,18 @@ export default class WorkshopControllerImpl implements WorkshopController {
       throw e
     }
   }
+
+  public async getWorkshop(
+    id: string
+  ): Promise<WorkshopModel> {
+    try {
+      const workshop = new Workshop()
+      const response = await workshop.getWorkshop(id)
+      return response
+    } catch (e) {
+      throw e
+    }
+  }
+
+  
 }

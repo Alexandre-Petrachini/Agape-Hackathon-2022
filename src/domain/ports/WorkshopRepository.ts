@@ -5,4 +5,5 @@ export interface WorkshopRepository {
     editWorkshop(id: string): Promise<void>
     deleteWorkshop(id: string): Promise<void>
     getMyWorkshops(id: string): Promise<WorkshopModel[]>
+    getWorkshop(id: string): Promise<WorkshopModel>
 }

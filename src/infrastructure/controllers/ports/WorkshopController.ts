@@ -6,4 +6,5 @@ export interface WorkshopController {
     editWorkshop(id: string): Promise<void>
     deleteWorkshop(id: string): Promise<void>
     getMyWorkshops(id: string): Promise<WorkshopModel[] | ErrorModel>
+    getWorkshop(id: string): Promise<WorkshopModel>
 }

@@ -49,6 +49,18 @@ export default class WorkshopRepositoryImpl implements WorkshopRepository {
     }
   }
 
+  public getWorkshop = async (
+    id: string
+  ): Promise<WorkshopModel> => {
+    try {
+      // EDIT DATA ON API
+      const workshop: WorkshopModel = { name: 'workshop name', areaOfVolunteerWork: 'areaOfVolunteerWork', local: 'local', period: 'period', description: 'description' }
+      return workshop
+    } catch (err: any) {
+      throw this.getError(err)
+    }
+  }
+
   private getError(err: any) {
     let error: APIError
     switch (err.response.status) {
