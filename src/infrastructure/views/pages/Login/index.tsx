@@ -3,10 +3,13 @@ import "./styles.scss";
 import Logo from "../../../../images/login_logo.png";
 import Input from "../../components/Input";
 import Header from "../../components/Header/Header";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+
+  let navigate = useNavigate();
 
   const handleUsernameChange = (value: string) => {
     setUsername(value);
@@ -39,7 +42,7 @@ const Login = () => {
           style={{ color: "#fff" }}
         />
 
-        <button>Entrar</button>
+        <button onClick={() => navigate("/workshops")}>Entrar</button>
       </form>
     </div>
   );
