@@ -1,5 +1,5 @@
 import axios, { AxiosResponse } from 'axios'
-import { LoginModel } from '../../domain/models/auth/AuthModel'
+import { EditProfileModel, LoginModel, SignUpModel } from '../../domain/models/auth/AuthModel'
 import { ResponseModel } from './models/ResponseModel'
 import { UnauthorizedError } from './errors/auth/UnauthorizedError'
 import { APIError } from './errors/APIError'
@@ -11,29 +11,60 @@ export default class AuthRepositoryImpl implements AuthRepository {
     password: string
   ): Promise<LoginModel> => {
     try {
-      // const { data }: AxiosResponse<ResponseModel<LoginModel>> = await axios({
-      //   method: 'post',
-      //   url: 'http://localhost:8080/login',
-      //   data: {
-      //     login: user,
-      //     password,
-      //   },
-      // })
-      // const responseBody = data
-      // if (responseBody.data) {
-      //   const loginModelInstance = new LoginModel(
-      //     responseBody.data.token,
-      //     responseBody.data.login,
-      //     responseBody.data.isAdmin,
-      //     responseBody.status
-      //   )
-      //   return loginModelInstance
-      // }
-
+      // TAKE DATA FROM API
       const loginModelInstance = new LoginModel(
         'token',
-        'login',
-        true,
+        'email',
+        'password',
+        'phone',
+        'school',
+        'rf',
+        'occupationArea',
+        200
+      )
+      return loginModelInstance
+
+      throw new UnauthorizedError()
+    } catch (err: any) {
+      throw this.getError(err)
+    }
+  }
+
+  public signup = async (
+    email: string, password: string, phone: string, school: string, rf: string, occupationArea: string
+  ): Promise<LoginModel> => {
+    try {
+      // TAKE DATA FROM API
+      const loginModelInstance = new SignUpModel(
+        'token',
+        'email',
+        'password',
+        'phone',
+        'school',
+        'rf',
+        'occupationArea',
+        200
+      )
+      return loginModelInstance
+
+      throw new UnauthorizedError()
+    } catch (err: any) {
+      throw this.getError(err)
+    }
+  }
+
+  public editProfile = async (
+    id: string
+  ): Promise<EditProfileModel> => {
+    try {
+      // TAKE DATA FROM API
+      const loginModelInstance = new EditProfileModel(
+        'email',
+        'password',
+        'phone',
+        'school',
+        'rf',
+        'occupationArea',
         200
       )
       return loginModelInstance

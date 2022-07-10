@@ -3,8 +3,11 @@ import { IUser, UserSliceState } from './type'
 
 const initialState: UserSliceState = {
   user: {
-    login: '',
-    isAdmin: false,
+    email: '',
+    phone: '',
+    school: '',
+    rf: '',
+    occupationArea: ''
   },
 }
 
@@ -19,8 +22,11 @@ export const userSlice = createSlice({
     },
     logout: (state) => {
       state.user = {
-        login: '',
-        isAdmin: false,
+        email: '',
+        phone: '',
+        school: '',
+        rf: '',
+        occupationArea: ''
       }
     },
   },

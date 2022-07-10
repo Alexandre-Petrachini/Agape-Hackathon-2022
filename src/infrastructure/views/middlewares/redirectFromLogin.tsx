@@ -9,7 +9,7 @@ export function redirectFromLogin() {
   const user = useSelector((state: RootState) => state.user.user)
   const isAuth = getCookie('token')
   if (isAuth) {
-    if (!user.login) {
+    if (!user.email) {
       return <Login />
     }
     return <Navigate to="/home" />

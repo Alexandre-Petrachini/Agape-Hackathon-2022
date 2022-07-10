@@ -1,26 +1,63 @@
 export class LoginModel {
   token: string
-
-  login: string
-
-  isAdmin: boolean
-
+  email: string
+  password: string
+  phone: string
+  school: string
+  rf: string
+  occupationArea: string
   status: number
 
-  constructor(token: string, login: string, isAdmin: boolean, status: number) {
+  constructor(token: string, email: string, password: string, phone: string, school: string, rf: string, occupationArea: string,  status: number) {
     this.token = token
-    this.login = login
-    this.isAdmin = isAdmin
+    this.email = email
+    this.password = password
+    this.phone = phone
+    this.school = school
+    this.rf = rf
+    this.occupationArea = occupationArea
     this.status = status
   }
 }
 
 export class SignUpModel {
   token: string
+  email: string
+  password: string
+  phone: string
+  school: string
+  rf: string
+  occupationArea: string
   status: number
 
-  constructor(token: string, status: number) {
+  constructor(token: string, email: string, password: string, phone: string, school: string, rf: string, occupationArea: string,  status: number) {
     this.token = token
+    this.email = email
+    this.password = password
+    this.phone = phone
+    this.school = school
+    this.rf = rf
+    this.occupationArea = occupationArea
+    this.status = status
+  }
+}
+
+export class EditProfileModel {
+  email?: string
+  password?: string
+  phone?: string
+  school?: string
+  rf?: string
+  occupationArea?: string
+  status: number
+
+  constructor(email: string, password: string, phone: string, school: string, rf: string, occupationArea: string,  status: number) {
+    this.email = email
+    this.password = password
+    this.phone = phone
+    this.school = school
+    this.rf = rf
+    this.occupationArea = occupationArea
     this.status = status
   }
 }
