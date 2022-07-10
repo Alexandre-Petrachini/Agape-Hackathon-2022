@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { redirectFromLogin } from "./middlewares/redirectFromLogin";
 import { withAuth } from "./middlewares/withAuth";
 import { Home } from "./pages/home";
+import Login from "./pages/Login";
 import SignIn from "./pages/SignIn";
 
 export function AppRoutes() {
@@ -15,6 +16,7 @@ export function AppRoutes() {
         <Route path="/" element={redirectFromLogin()} />
         <Route path="/landing" element={redirectFromLogin()} />
         <Route path="/home" element={withAuth(<Home />)} />
+        <Route path="/login" element={<Login />} />
         <Route path="/sign-in" element={<SignIn />} />
       </Routes>
     </Router>

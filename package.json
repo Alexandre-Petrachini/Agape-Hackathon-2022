@@ -1,9 +1,8 @@
 {
-  "name": "frontend-atendimento-movel",
+  "name": "ods",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@gitlab.com:grupofleury/atendimento-movel/webapp/web/frontend-atendimento-movel.git",
-  "author": "CI&T",
+  "author": "Coruja",
   "license": "MIT",
   "private": true,
   "type": "module",
