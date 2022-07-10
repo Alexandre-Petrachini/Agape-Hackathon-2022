@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./styles.scss";
 import Logo from "../../../../images/login_logo.png";
 import Input from "../../components/Input";
+import Header from "../../components/Header/Header";
 
 const Login = () => {
   const [username, setUsername] = useState("");
@@ -17,6 +18,7 @@ const Login = () => {
 
   return (
     <div id="login-screen">
+      <Header />
       <img src={Logo} />
 
       <form>
@@ -25,6 +27,7 @@ const Login = () => {
           error=""
           id="Login-user"
           onChange={handleUsernameChange}
+          style={{ color: "#fff" }}
         />
 
         <Input
@@ -33,6 +36,7 @@ const Login = () => {
           id="Login-password"
           isPassword
           onChange={handlePasswordChange}
+          style={{ color: "#fff" }}
         />
 
         <button>Entrar</button>

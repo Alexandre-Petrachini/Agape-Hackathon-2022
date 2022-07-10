@@ -1,0 +1,43 @@
+@import "./../../../../styles.scss";
+
+#workshop-component {
+  &.container {
+    // width: 80%;
+    width: 325px;
+    height: 140px;
+    background: rgba(255, 154, 89, 0.3);
+    border: 1px solid #ff9a59;
+    border-radius: 25px;
+    padding: 8px 26px 15px 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .name-workbox {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 21px;
+      display: flex;
+      align-items: center;
+
+      color: #ff9a59;
+    }
+
+    .description-workbox {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 18px;
+
+      color: #303030;
+    }
+
+    .workshop-button {
+      width: 140px;
+      align-self: flex-end;
+    }
+  }
+}
