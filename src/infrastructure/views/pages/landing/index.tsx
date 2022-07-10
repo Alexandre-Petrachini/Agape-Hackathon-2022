@@ -3,13 +3,13 @@ import AuthControllerImpl from "../../../controllers/AuthControllerImpl";
 import { AuthController } from "../../../controllers/ports/AuthController";
 const authController: AuthController = new AuthControllerImpl();
 
-function Login() {
+function Landing() {
   const onSubmit = async () => {
     const login = await authController.login("", "");
   };
 
   return (
-    <div role="contentinfo" id="login-screen" className="container">
+    <div role="contentinfo" id="landing-screen" className="container">
       <div className="introduction">
         <div className="introduction-text-wrapper">
           <p>
@@ -28,4 +28,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default Landing;

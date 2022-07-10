@@ -1,0 +1,24 @@
+#signin-screen {
+  min-height: 100vh;
+
+  background: linear-gradient(180deg, #1b195b 0%, #000000 100%), #272429;
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  text-align: center;
+
+  form {
+    padding: 0 40px;
+
+    button {
+      width: 100%;
+      height: 56px;
+
+      margin-top: 180px;
+
+      background: #ff9a59;
+      border: 1px solid #ff9a59;
+      border-radius: 100px;
+    }
+  }
+}
