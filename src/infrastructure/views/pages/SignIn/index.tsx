@@ -1,41 +1,66 @@
-import React, { useState } from "react";
-import "./styles.scss";
-import Logo from "../../../../images/login_logo.png";
+import React from "react";
 import Input from "../../components/Input";
+import "./styles.scss";
+import Logo from "../../../../images/header_logo.png";
 
 const SignIn = () => {
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
-
-  const handleUsernameChange = (value: string) => {
-    setUsername(value);
-  };
-
-  const handlePasswordChange = (value: string) => {
-    setPassword(value);
-  };
-
   return (
     <div id="signin-screen">
+      <button className="btn-back">{"< "} Voltar</button>
       <img src={Logo} />
 
       <form>
         <Input
-          label="Usuário:"
           error=""
-          id="signin-user"
-          onChange={handleUsernameChange}
+          label="Nome"
+          id="sign-in-name"
+          onChange={() => undefined}
         />
 
         <Input
-          label="Senha:"
           error=""
-          id="signin-password"
-          isPassword
-          onChange={handlePasswordChange}
+          label="Àrea de atuação"
+          id="sign-in-name"
+          onChange={() => undefined}
         />
 
-        <button>Entrar</button>
+        <Input
+          error=""
+          label="Registro funcional"
+          id="sign-in-name"
+          onChange={() => undefined}
+        />
+
+        <Input
+          error=""
+          label="Telefone"
+          id="sign-in-name"
+          onChange={() => undefined}
+        />
+
+        <Input
+          error=""
+          label="Email"
+          id="sign-in-name"
+          onChange={() => undefined}
+        />
+
+        <Input
+          error=""
+          label="Senha"
+          isPassword
+          id="sign-in-name"
+          onChange={() => undefined}
+        />
+        <Input
+          error=""
+          label="Repetir senha"
+          isPassword
+          id="sign-in-name"
+          onChange={() => undefined}
+        />
+
+        <button>Cadastre-se</button>
       </form>
     </div>
   );

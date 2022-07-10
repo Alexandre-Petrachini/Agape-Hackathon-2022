@@ -1,79 +1,65 @@
-@import './../../../../styles.scss';
+@import "./../../../../styles.scss";
 
 #input-component {
-    &.container {
-        display: flex;
-        flex-direction: column;
-        min-height: 93px;
-        position: relative;
+  &.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 93px;
+    position: relative;
 
-        .label {
-            font-weight: 400;
-            font-size: 14px;
-            width: fit-content;
-            margin-bottom: 5px;
-            
-            &.error {
-                color:$error;
-            }
-        }
+    .label {
+      font-weight: 400;
+      font-size: 14px;
+      width: fit-content;
+      margin-bottom: 5px;
 
-        .error-message {
-            font-size: 12px;
-            margin-top: 3px;
-            color: $error;
-        }
-    
-        .input-div {
-            border-bottom: 2px solid $grayInput;
-            background-color: $bgGrayInput;
-            height: 48px;
-            width: 100%;
-            display: flex;
-            align-items: center;
-    
-            &.error {
-                border-bottom: 2px solid $error;
-            }  
-    
-            .input {
-                font-size: 14px;
-                display: flex;
-                border: none;
-                width: 100%;
-                background-color: $bgGrayInput;
-                padding-right: 40px;
-                padding-left: 12px;
-                
-            }
-    
-            input:focus {
-                outline: none;
-            }
-    
-            &:focus-within {
-                border-bottom: 2px solid $primary;
-                .icon {
-                    color: $primary;
-                    &.error {
-                        color:$error;
-                    }
-                }
-            } 
-        
-            .icon {
-                position: absolute;
-                right: 10px;
-                width: 18px;
-                height: 18px;
-                color: $grayInput;
-                &.error {
-                    color:$error;
-                }
-            }
-        }
-
-        
+      &.error {
+        color: $error;
+      }
     }
-}
 
+    .error-message {
+      font-size: 12px;
+      margin-top: 3px;
+      color: $error;
+    }
+
+    .input-div {
+      border: 2px solid $grayInput;
+      border-radius: 100px;
+      height: 48px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+
+      &.error {
+        border-bottom: 2px solid $error;
+      }
+
+      .input {
+        font-size: 14px;
+        display: flex;
+        border: none;
+        width: 100%;
+        background-color: transparent;
+        padding-right: 40px;
+        padding-left: 12px;
+      }
+
+      input:focus {
+        outline: none;
+      }
+
+      .icon {
+        position: absolute;
+        right: 10px;
+        width: 18px;
+        height: 18px;
+        color: $grayInput;
+        &.error {
+          color: $error;
+        }
+      }
+    }
+  }
+}
