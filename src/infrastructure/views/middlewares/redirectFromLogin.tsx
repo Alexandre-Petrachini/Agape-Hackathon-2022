@@ -1,18 +1,18 @@
-import React from 'react'
-import { useSelector } from 'react-redux'
-import { Navigate } from 'react-router-dom'
-import { getCookie } from '../../../utils/utils'
-import { RootState } from '../../redux/store'
-import Login from '../pages/login'
+import React from "react";
+import { useSelector } from "react-redux";
+import { Navigate } from "react-router-dom";
+import { getCookie } from "../../../utils/utils";
+import { RootState } from "../../redux/store";
+import Landing from "../pages/landing";
 
 export function redirectFromLogin() {
-  const user = useSelector((state: RootState) => state.user.user)
-  const isAuth = getCookie('token')
+  const user = useSelector((state: RootState) => state.user.user);
+  const isAuth = getCookie("token");
   if (isAuth) {
     if (!user.email) {
-      return <Login />
+      return <Landing />;
     }
-    return <Navigate to="/home" />
+    return <Navigate to="/home" />;
   }
-  return <Login />
+  return <Landing />;
 }
