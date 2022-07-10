@@ -1,18 +1,17 @@
 import "./styles.scss";
-import AuthControllerImpl from "../../../controllers/AuthControllerImpl";
-import { AuthController } from "../../../controllers/ports/AuthController";
 import { useNavigate } from "react-router-dom";
-const authController: AuthController = new AuthControllerImpl();
 
 function Landing() {
   let navigate = useNavigate();
 
-  const onSubmit = async () => {
-    const login = await authController.login("", "");
-  };
-
   return (
     <div role="contentinfo" id="landing-screen" className="container">
+      <div className="agape-logo">
+        <img src={"./agapelogo.png"} style={{ height: "120px" }} />
+      </div>
+      <div className="agape-vai">
+        <img src={"./agapevai.png"} style={{ height: "250px" }} />
+      </div>
       <div className="introduction">
         <div className="introduction-text-wrapper">
           <p>
