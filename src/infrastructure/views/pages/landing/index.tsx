@@ -1,9 +1,12 @@
 import "./styles.scss";
 import AuthControllerImpl from "../../../controllers/AuthControllerImpl";
 import { AuthController } from "../../../controllers/ports/AuthController";
+import { useNavigate } from "react-router-dom";
 const authController: AuthController = new AuthControllerImpl();
 
 function Landing() {
+  let navigate = useNavigate();
+
   const onSubmit = async () => {
     const login = await authController.login("", "");
   };
@@ -21,8 +24,12 @@ function Landing() {
       </div>
 
       <div id="footer">
-        <button className="btn-1">Login</button>
-        <button className="btn-2">Cadastre-se</button>
+        <button className="btn-1" onClick={() => navigate("/login")}>
+          Login
+        </button>
+        <button className="btn-2" onClick={() => navigate("/sign-in")}>
+          Cadastre-se
+        </button>
       </div>
     </div>
   );

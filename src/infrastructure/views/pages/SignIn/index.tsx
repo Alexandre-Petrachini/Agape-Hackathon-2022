@@ -2,12 +2,14 @@ import React from "react";
 import Input from "../../components/Input";
 import "./styles.scss";
 import Logo from "../../../../images/header_logo.png";
+import Header from "../../components/Header/Header";
+import { useNavigate } from "react-router-dom";
 
 const SignIn = () => {
+  let navigate = useNavigate();
   return (
     <div id="signin-screen">
-      <button className="btn-back">{"< "} Voltar</button>
-      <img src={Logo} />
+      <Header />
 
       <form>
         <Input
@@ -60,7 +62,7 @@ const SignIn = () => {
           onChange={() => undefined}
         />
 
-        <button>Cadastre-se</button>
+        <button onClick={() => navigate("/workshops")}>Cadastre-se</button>
       </form>
     </div>
   );
