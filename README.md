@@ -103,12 +103,11 @@ com foco em agregar ao clube juvenil e o projeto de vida, já existentes nas gra
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+Instruções para rodar o projeto logo abaixo nos tópicos.
 
 ### Pré-requisitos
 
-This is an example of how to list things you need to use the software and how to install them.
+Baixar o módulo npm:
 * npm
   ```sh
   npm install npm@latest -g
@@ -116,19 +115,19 @@ This is an example of how to list things you need to use the software and how to
 
 ### Instalação
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Colnar o repositório
    ```sh
    git clone https://github.com/Alexandre-Petrachini/hackathon-ods-2022-econo.git
    ```
-3. Install NPM packages
+2. Instalar os pacotes NPM
    ```sh
    npm install
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+3. Rodar o projeto:
+  ```sh
+   npm start
    ```
+4. Se tudo ocorrer como o esperado, o projeto estará rodando na porta 3000. (http://localhost:3000/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
