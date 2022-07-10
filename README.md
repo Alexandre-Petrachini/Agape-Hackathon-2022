@@ -185,7 +185,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Alexandre Petrachini - alexandrepetrachini@gmail.com
 <br>
-Lucas Varani - lucascvarani@gmail.com
+Lucas César Varani Francisco - lucascvarani@gmail.com
 <br>
 Anna Redistuo - annaredistuo@gmail.com
 <br>
