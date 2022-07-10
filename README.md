@@ -36,12 +36,8 @@
 <h3 align="center">Ágape - Virada ODS 2022</h3>
 
   <p align="center">
-    project_description
+    Um projeto voltado para erradicar a evasão escolar no ensino médio público por meio de melhoria das políticas públicas existentes.
     <br />
-    <a href="https://github.com/Alexandre-Petrachini/hackathon-ods-2022-econo"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/Alexandre-Petrachini/hackathon-ods-2022-econo">View Demo</a>
     ·
     <a href="https://github.com/Alexandre-Petrachini/hackathon-ods-2022-econo/issues">Report Bug</a>
     ·
@@ -85,7 +81,9 @@
 ![login out](https://user-images.githubusercontent.com/36488039/178151491-ad32714c-6a05-414f-81b3-345755f630f4.png)
 
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `Alexandre-Petrachini`, `hackathon-ods-2022-econo`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `Ágape - Virada ODS 2022`, `project_description`
+Projeto feito para o Hackathon ODS 2022, com objetivo de resolver problemas encontrados no sistema do ensino 
+médio público atual, através de uma plataforma de match por inteligência artificial, entre voltuariados e professores para realização de oficinas
+com foco em agregar ao clube juvenil e o projeto de vida, já existentes nas grades curriculares estudantis porém precários. 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
