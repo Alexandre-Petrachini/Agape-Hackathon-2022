@@ -1,0 +1,31 @@
+@import './../../../../styles.scss';
+
+#back-header {
+  background: $white;
+  box-shadow: 0 4px 4px rgba(36, 36, 36, 0.08);
+  width: 100%;
+  min-height: 56px;
+  display: block;
+  justify-content: center;
+  .header-content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background: transparent;
+    padding: 20px;
+    .header-profile {
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      p {
+        font-family: 'FS Lola', sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        height: 21px;
+        color: #333333;
+        margin: 0;
+      }
+    }
+  }
+}

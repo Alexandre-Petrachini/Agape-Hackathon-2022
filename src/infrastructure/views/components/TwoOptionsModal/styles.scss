@@ -1,0 +1,99 @@
+@import './../../../../styles.scss';
+
+#two-options-modal-component {
+    .two-options-modal-container {
+        height: 170px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .two-options-modal-sub-container {
+            .header {
+                display: flex;
+                justify-content: center;
+                font-weight: 700;
+                font-size: 18px;
+                padding-top: 12px;
+                color: #1A1A1A
+            }
+            .description {
+                text-align: center;
+                margin-top: 38px;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 18px;
+                padding-left: 4px;
+                padding-right: 4px;
+                color: $gray;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 18px;
+            }
+        }
+        .modal-buttons-container {
+            display: flex;
+            justify-content: space-around;
+            padding-top: 20px;
+            border-top: 1px solid #DDDDDD;
+            margin-left: -20px;
+            margin-right: -20px;
+            .left-button {
+                cursor: pointer;
+                width: 100%;
+                text-align: center;
+                color: $gray;
+                font-weight: 700;
+                font-size: 16px;
+                margin-top: -20px;
+                margin-bottom: -20px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+            .buttons-divisor {
+                border-left: 1px solid #DDDDDD;
+                margin-bottom: -21px;
+                margin-top: -20px;
+            }
+            .right-button {
+                cursor: pointer;
+                width: 100%;
+                text-align: center;
+                color: $gray;
+                font-weight: 700;
+                font-size: 16px;
+                margin-top: -20px;
+                margin-bottom: -20px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+        }
+    }
+    
+    &.Modal {
+        position: absolute;
+        background-color: #fff;
+        inset: 35% 10% auto;
+        border: 1px solid #E9F1E4;
+        filter: none !important;
+        box-shadow: 4px 8px 16px 4px rgba(105, 111, 114, 0.2);
+        border-radius: 8px;
+        padding: 20px;
+        outline: none;
+        @media only screen and (min-width: 750px) {
+            inset: 35% 23% auto;
+        }
+        @media only screen and (min-width: 1300px) {
+            inset: 35% 35% auto;
+        }
+
+      }  
+}
+
+.Two-Options-Modal-Overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: blur(4px);
+  }
+

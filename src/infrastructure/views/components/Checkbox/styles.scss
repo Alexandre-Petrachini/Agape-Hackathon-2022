@@ -1,0 +1,11 @@
+#checkbox-component {
+    cursor: pointer;
+    &.container {
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        .label {
+            margin-left: 7px;
+        }
+    }
+}
