@@ -1,5 +1,5 @@
 import axios, { AxiosResponse } from 'axios'
-import { LoginModel, SignUpModel } from '../../domain/models/auth/AuthModel'
+import { EditProfileModel, LoginModel, SignUpModel } from '../../domain/models/auth/AuthModel'
 import { ResponseModel } from './models/ResponseModel'
 import { UnauthorizedError } from './errors/auth/UnauthorizedError'
 import { APIError } from './errors/APIError'
@@ -37,6 +37,28 @@ export default class AuthRepositoryImpl implements AuthRepository {
       // TAKE DATA FROM API
       const loginModelInstance = new SignUpModel(
         'token',
+        'email',
+        'password',
+        'phone',
+        'school',
+        'rf',
+        'occupationArea',
+        200
+      )
+      return loginModelInstance
+
+      throw new UnauthorizedError()
+    } catch (err: any) {
+      throw this.getError(err)
+    }
+  }
+
+  public editProfile = async (
+    id: string
+  ): Promise<EditProfileModel> => {
+    try {
+      // TAKE DATA FROM API
+      const loginModelInstance = new EditProfileModel(
         'email',
         'password',
         'phone',

@@ -41,3 +41,23 @@ export class SignUpModel {
     this.status = status
   }
 }
+
+export class EditProfileModel {
+  email?: string
+  password?: string
+  phone?: string
+  school?: string
+  rf?: string
+  occupationArea?: string
+  status: number
+
+  constructor(email: string, password: string, phone: string, school: string, rf: string, occupationArea: string,  status: number) {
+    this.email = email
+    this.password = password
+    this.phone = phone
+    this.school = school
+    this.rf = rf
+    this.occupationArea = occupationArea
+    this.status = status
+  }
+}

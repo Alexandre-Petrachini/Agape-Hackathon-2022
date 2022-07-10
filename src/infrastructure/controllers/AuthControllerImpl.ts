@@ -1,6 +1,6 @@
 import store from '../redux/store'
 import { setUser } from '../redux/user/userSlice'
-import { LoginModel, SignUpModel } from '../../domain/models/auth/AuthModel'
+import { EditProfileModel, LoginModel, SignUpModel } from '../../domain/models/auth/AuthModel'
 import { ErrorModel } from './models/ErrorModel'
 import { UnauthorizedError } from '../repositories/errors/auth/UnauthorizedError'
 
@@ -15,9 +15,7 @@ export default class AuthControllerImpl implements AuthController {
   ): Promise<LoginModel | ErrorModel> {
     try {
       const auth = new Auth()
-      const userBase64 = base64Encode(login)
-      const passwordBase64 = base64Encode(password)
-      const loginEncoded = await auth.login(userBase64, passwordBase64)
+      const response = await auth.login(login, password)
       store.dispatch(
         setUser({
           email: 'email',
@@ -27,7 +25,7 @@ export default class AuthControllerImpl implements AuthController {
           occupationArea: 'occupationArea'
         })
       )
-      return loginEncoded
+      return response
     } catch (e) {
       if (e instanceof UnauthorizedError) {
         return new ErrorModel('Sem autorização')
@@ -41,7 +39,7 @@ export default class AuthControllerImpl implements AuthController {
   ): Promise<SignUpModel | ErrorModel> {
     try {
       const auth = new Auth()
-      const loginEncoded = await auth.signup(email, password, phone, school, rf, occupationArea)
+      const response = await auth.signup(email, password, phone, school, rf, occupationArea)
       store.dispatch(
         setUser({
           email: 'email',
@@ -51,7 +49,31 @@ export default class AuthControllerImpl implements AuthController {
           occupationArea: 'occupationArea'
         })
       )
-      return loginEncoded
+      return response
+    } catch (e) {
+      if (e instanceof UnauthorizedError) {
+        return new ErrorModel('Sem autorização')
+      }
+      return new ErrorModel('Error')
+    }
+  }
+
+  public async editProfile(
+    id: string
+  ): Promise<EditProfileModel | ErrorModel> {
+    try {
+      const auth = new Auth()
+      const response = await auth.editProfile(id)
+      store.dispatch(
+        setUser({
+          email: 'email',
+          phone: 'phone',
+          school: 'school',
+          rf: 'rf',
+          occupationArea: 'occupationArea'
+        })
+      )
+      return response
     } catch (e) {
       if (e instanceof UnauthorizedError) {
         return new ErrorModel('Sem autorização')
