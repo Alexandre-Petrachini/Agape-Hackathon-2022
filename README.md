@@ -30,7 +30,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/Alexandre-Petrachini/hackathon-ods-2022-econo">
-    <img src="images/logo.png" alt="Logo" width="240" height="240">
+    <img src="images/logo.png" alt="Logo" width="500" height="183">
   </a>
 
 <h3 align="center">Ágape - Virada ODS 2022</h3>
@@ -92,7 +92,10 @@ com foco em agregar ao clube juvenil e o projeto de vida, já existentes nas gra
 ### Built With
 
 * [![React][React.js]][React-url]
-
+* AWS
+* Sklearn
+* BERT
+* MongoDB
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
