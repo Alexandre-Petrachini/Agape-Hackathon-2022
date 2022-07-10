@@ -8,7 +8,7 @@ export function withAuth(Component: ReactNode) {
   const user = useSelector((state: RootState) => state.user.user)
   const isAuth = getCookie('token')
   if (isAuth) {
-    if (!user.login) {
+    if (!user.email) {
       return <Navigate to="/login" />
     }
     return Component

@@ -1,6 +1,6 @@
 import { AuthRepository } from '../ports/AuthRepository'
 import AuthRepositoryImpl from '../../infrastructure/repositories/AuthRepositoryImpl'
-import { LoginModel } from '../models/auth/AuthModel'
+import { LoginModel, SignUpModel } from '../models/auth/AuthModel'
 import { setCookie } from '../../utils/utils'
 
 export class Auth {
@@ -12,7 +12,13 @@ export class Auth {
 
   async login(user: string, password: string): Promise<LoginModel> {
     const repositoryResponse = await this.repository.login(user, password)
-    await setCookie('token', repositoryResponse.token)
+    // await setCookie('token', repositoryResponse.token)
+    return repositoryResponse
+  }
+
+  async signup(email: string, password: string, phone: string, school: string, rf: string, occupationArea: string): Promise<SignUpModel> {
+    const repositoryResponse = await this.repository.signup(email, password, phone, school, rf, occupationArea)
+    // await setCookie('token', repositoryResponse.token)
     return repositoryResponse
   }
 }

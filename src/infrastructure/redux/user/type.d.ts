@@ -1,6 +1,9 @@
 export interface IUser {
-  login: string
-  isAdmin: boolean
+  email: string
+  phone: string
+  school: string
+  rf: string
+  occupationArea: string
 }
 
 export interface UserSliceState {
