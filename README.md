@@ -82,7 +82,7 @@
 
 
 Projeto feito para o Hackathon ODS 2022, com objetivo de resolver problemas encontrados no sistema do ensino 
-médio público atual, através de uma plataforma de match por inteligência artificial, entre voltuariados e professores para realização de oficinas
+médio público atual, através de uma plataforma de match por inteligência artificial, entre voluntariados e professores para realização de oficinas
 com foco em agregar ao clube juvenil e o projeto de vida, já existentes nas grades curriculares estudantis porém precários. 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
