@@ -189,7 +189,7 @@ Lucas César Varani Francisco - lucascvarani@gmail.com
 <br>
 Anna Redistuo - annaredistuo@gmail.com
 <br>
-Mariana Panham - mahpanham@gmail.com
+Marina Panham - mah.panham@gmail.com
 <br>
 Marcelo Annunciação - marceloa@gmail.com
 
