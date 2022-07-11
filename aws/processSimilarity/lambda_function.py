@@ -2,6 +2,7 @@ import json
 import requests
 
 def query(payload):
+    #Key no longer valid, TODO: setup credentials in github to store permanent keys
     API_URL = "https://api-inference.huggingface.co/models/ricardo-filho/bert-base-portuguese-cased-nli-assin"
     headers = {"Authorization": "Bearer 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"}
     response = requests.post(API_URL, headers=headers, json=payload)
